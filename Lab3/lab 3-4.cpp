@@ -15,21 +15,21 @@ class circle
   public:
     float perimeter()
     {
-	return (pi * 2 * radius);
+        return (pi * 2 * radius);
     }
     float area()
     {
-	return pi * radius * radius;
+        return pi * radius * radius;
     }
     void setdata()
     {
-	cout << "\nSet the value of radius: " << endl;
-	cin >> radius;
+        cout << "\nSet the value of radius: " << endl;
+        cin >> radius;
     }
     void showdata()
     {
-	cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ". \n"
-	     << endl;
+        cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ". \n"
+             << endl;
     }
 };
 class rectangle
@@ -41,23 +41,23 @@ class rectangle
   public:
     float perimeter()
     {
-	return (2 * (length + breadth));
+        return (2 * (length + breadth));
     }
     float area()
     {
-	return (length * breadth);
+        return (length * breadth);
     }
     void setdata()
     {
-	cout << "\nSet the value of length: " << endl;
-	cin >> length;
-	cout << "\nSet the value of breadth: " << endl;
-	cin >> breadth;
+        cout << "\nSet the value of length: " << endl;
+        cin >> length;
+        cout << "\nSet the value of breadth: " << endl;
+        cin >> breadth;
     }
     void showdata()
     {
-	cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ". \n"
-	     << endl;
+        cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ". \n"
+             << endl;
     }
 };
 class triangle
@@ -70,21 +70,21 @@ class triangle
   public:
     float perimeter()
     {
-	return (a + b + c);
+        return (a + b + c);
     }
     float area()
     {
-	return pow((perimeter() * ((perimeter() - a) * (perimeter() - b) * (perimeter() - c))),0.5);
+        return pow((perimeter() * ((perimeter() - a) * (perimeter() - b) * (perimeter() - c))), 0.5);
     }
     void setdata()
     {
-	cout << "\nSet the value of sides: " << endl;
-	cin >> a >> b >> c;
+        cout << "\nSet the value of sides: " << endl;
+        cin >> a >> b >> c;
     }
     void showdata()
     {
-	cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ".\n"
-	     << endl;
+        cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ".\n"
+             << endl;
     }
 };
 
