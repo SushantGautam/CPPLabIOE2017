@@ -74,7 +74,7 @@ class triangle
     }
     float area()
     {
-	return (perimeter() * ((perimeter() - a) * (perimeter() - b) * (perimeter() - c)));
+	return pow((perimeter() * ((perimeter() - a) * (perimeter() - b) * (perimeter() - c))),0.5);
     }
     void setdata()
     {
@@ -83,7 +83,7 @@ class triangle
     }
     void showdata()
     {
-	cout << "\nThe perimeter is " << perimeter() << " and area is square root of " << area() << ". ;\) \n"
+	cout << "\nThe perimeter is " << perimeter() << " and area is " << area() << ".\n"
 	     << endl;
     }
 };
