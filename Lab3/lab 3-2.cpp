@@ -31,7 +31,7 @@ public:
     char ch;
     do
     {
-      cout << "\n Enter Prime number. \n"
+      cout << "\n Enter a number. \n"
            << endl;
       setdata();
       if (ifPrime())

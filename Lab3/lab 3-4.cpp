@@ -74,7 +74,7 @@ class triangle
     }
     float area()
     {
-	return ((perimeter() * (perimeter() - a) * (perimeter() - b) * (perimeter() - c)));
+	return (perimeter() * ((perimeter() - a) * (perimeter() - b) * (perimeter() - c)));
     }
     void setdata()
     {
