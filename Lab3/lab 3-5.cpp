@@ -11,21 +11,23 @@ using namespace std;
 class employee
 {
   private:
-    int id, bonus, overtime;
+    int id, bonus, overtime, year;
 
   public:
     void setpara()
     {
-	cout << "\nEnter Employee ID :\n";
-	cin >> id;
-	cout << "\nEnter Employee Bonus :\n";
-	cin >> bonus;
-	cout << "\nEnter Employee Overtime :\n";
-	cin >> overtime;
+        cout << "\nEnter Employee ID :\n";
+        cin >> id;
+        cout << "\nEnter Year :\n";
+        cin >> year;
+        cout << "\nEnter Employee Bonus :\n";
+        cin >> bonus;
+        cout << "\nEnter Employee Overtime :\n";
+        cin >> overtime;
     }
     void displayreport()
     {
-	cout << "\nEmployee with ID " << id << " has received Rs " << bonus << " as bonus and had worked " << overtime << " hours as an overtime in a year.";
+        cout << "\nEmployee with ID " << id << " has received Rs " << bonus << " as bonus and had worked " << overtime << " hours as an overtime in " << year << ".";
     }
 };
 
@@ -39,14 +41,14 @@ int main(int argc, char const *argv[])
     employee obj[n];
     while (n != 0)
     {
-	obj[n].setpara();
-	n--;
+        obj[n].setpara();
+        n--;
     }
     cout << "Data input Completed. Now streaming report.\n\n\n"
-	 << endl;
+         << endl;
     while (m != 0)
     {
-	obj[m].displayreport();
-	m--;
+        obj[m].displayreport();
+        m--;
     }
 }
