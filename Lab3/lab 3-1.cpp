@@ -16,6 +16,12 @@ public:
   {
     return (celValue * 180 / 100) + 32;
   }
+  void setdata()
+  {
+    cout << "\nEnter value in Celcius\n"
+         << endl;
+    cin >> celValue;
+  }
 };
 
 class far
